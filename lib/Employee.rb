@@ -23,7 +23,7 @@ class Employee
     self.all.select {|employee| employee.salary > num}    
   end
   
-  def find_by_department(department)
+  def self.find_by_department(department)
     self.all.find {|employee| employee.manager.department}
   end
   
